@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
