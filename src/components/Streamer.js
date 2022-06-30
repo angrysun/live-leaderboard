@@ -25,14 +25,14 @@ export default function Streamer() {
   const influencer = streamers.map(streamer => (
     <Influencer
       key={streamer.userID}
-      // display=(streamer.displayName)
       picture={streamer.picture}
+      name={streamer.displayName}
       score={streamer.score}
     />
   ))
 
   return (
-    <div>
+    <div className="container">
       {influencer}
     </div>
   )

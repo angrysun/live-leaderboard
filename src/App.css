@@ -28,11 +28,21 @@
   color: #61dafb;
 }
 
+.number {
+  width: 24px;
+  text-align: center;
+}
+
 .profile {
   width: 36px;
   height: 36px;
   border-radius: 18px;
   border: 2px solid rgb(255, 255, 255);
+}
+
+.score {
+  flex-grow: 1;
+  text-align: right;
 }
 
 @keyframes App-logo-spin {
