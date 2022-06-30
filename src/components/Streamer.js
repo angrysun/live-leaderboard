@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import Influencer from "./Influencer";
 
 export default function Streamer() {
-  const [streamer, setStreamer] = useState([])
+  const [streamers, setStreamers] = useState([])
 
   useEffect(() => {
     getStreamer();
@@ -17,7 +18,24 @@ export default function Streamer() {
       .then(response => response.json())
       .then((data) => {
         console.log(data);
-        setStreamer(data);
+        setStreamers(data);
       })
   }
+
+  const influencer = streamers.map(streamer => (
+    <Influencer
+      key={streamer.userID}
+      displayName=(streamer.displayName)
+      picture={streamer.picture}
+      score={streamer.score}
+    />
+  ))
+
+  return (
+    <div>
+      <div>
+
+      </div>
+    </div>
+  )
 }
